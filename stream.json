@@ -1,0 +1,20 @@
+{
+       "Name": "streamProcessorForBlog",
+       "Input": {
+              "KinesisVideoStream": {
+                     "Arn": "<input_your_ARN_VIDEO_STREAM_YOU_CREATED>"
+              }
+       },
+       "Output": {
+              "KinesisDataStream": {
+                     "Arn": "<input_your_ARN_KINESIS_DATA_STREAM>"
+              }
+       },
+       "RoleArn": "<input_your_ARN_RekognitionVideoIAM>",
+       "Settings": {
+              "FaceSearch": {
+                     "CollectionId": "rekVideoBlog",
+                     "FaceMatchThreshold": 85.5
+              }
+       }
+}
